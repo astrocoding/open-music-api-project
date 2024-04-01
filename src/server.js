@@ -1,4 +1,7 @@
 import { server as _server } from '@hapi/hapi'
+import ClientError from './exceptions/ClientError.js'
+import albums from './api/albums/index.js'
+import config from './utils/config.js'
 
 const init = async () => {
   const server = _server({
